@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="nav">
+        <div class="container">
+            <div class="logo">
+                <a href="#">Keravan Pizza</a>
+            </div>
+            <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Kotiinkuljetus</a></li>
+                    <li><a href="#">Yhteystiedot</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+
+    <section class="home">
+    </section>
+    <div style="height: 1000px">
+        <!-- just to make scrolling effect possible -->
+			<h2 class="myH2">Menu</h2>
+			
+
+            <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_5terre.jpg">
+                    <img src="https://mob-cdn.azureedge.net/kuvat/tuotteet/pizza-tropicana-540x380.jpg" alt="Cinque Terre" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                      <h2>Tropicana</h2>
+                      <p>Kinkku, Ananas</p>
+                      <h3>9,90€</h3>
+                    </div>
+                </div>
+              </div>
+              ​
+              ​
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_forest.jpg">
+                    <img src="https://mob-cdn.azureedge.net/kuvat/tuotteet/pizza-lihamestari-540x380.jpg" alt="Forest" width="600" height="400">
+                  </a>
+                  <div class="desc">
+                    <h2>Beef King</h2>
+                    <p>kinkku, paahdettu pekoni, kebabliha, pepperonimakkara, beef’n’roast-naudanjauheliha</p>
+                    <h3>12,90€</h3>
+                  </div>                </div>
+              </div>
+              ​
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_lights.jpg">
+                    <img src="https://mob-cdn.azureedge.net/kuvat/tuotteet/pizza-mozzarella-540x380.jpg" alt="Northern Lights" width="540" height="360">
+                  </a>
+                  <div class="desc">
+                    <h2>Tropicana</h2>
+                    <p>Puoli juustoa, rucolanverso (uunin jälkeen), kirsikkatomaatti (uunin jälkeen), mozzarella (uunin jälkeen) </p>
+                    <h3>10,90€</h3>
+                  </div>                </div>
+              </div>
+              ​
+              <div class="responsive">
+                <div class="gallery">
+                  <a target="_blank" href="img_mountains.jpg">
+                    <img src="https://mob-cdn.azureedge.net/kuvat/tuotteet/pizza-tuplapepperoni-540x380.jpg" alt="Mountains" width="540" height="360">
+                  </a>
+                  <div class="desc">
+                    <h2>El Pepperone</h2>
+                    <p>pepperonimakkara</p>
+                    <h3>9,90€</h3>
+                  </div>                </div>
+              </div>
+              ​
+    </div>
+
+<!-- Jquery needed -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+    <script>
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 50) {
+                $('.nav').addClass('affix');
+                console.log("OK");
+            } else {
+                $('.nav').removeClass('affix');
+            }
+        });
+    </script>
+</body>
+</html>
